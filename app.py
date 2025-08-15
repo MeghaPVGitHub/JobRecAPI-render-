@@ -66,4 +66,5 @@ def handler(path):
         return jsonify(top_3_job_ids)
     
     except Exception as e:
+
         return jsonify({"error": "An internal server error occurred.", "details": str(e)}), 500
